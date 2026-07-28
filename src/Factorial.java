@@ -32,8 +32,9 @@ public class Factorial {
         System.out.println("Enter the number: ");
         int num = sc.nextInt();
 
-        if(num <= 0){
+        if(num < 0){
             System.out.println("Invalid Input");
+            return;
         }
 
         long fact = 1;
